@@ -1,3 +1,7 @@
+<img src="logo-escuela.png" width="100%">
+
+<em> <small> <p style="text-align:right;">Rosa Elena Palma y Meza Buelna</p> </small> </em>
+
 # BPEL (Business Process Execution Language) 
 
 ## Contenido
@@ -10,14 +14,20 @@
     - [Fortalezas y Debilidades](#fortalezas-y-debilidades)
     - [Comparación con Otros Estándares](#comparacion-con-otros-estandares)
   - [Estado Actual y Tendencias](#estado-actual-y-tendencias)
+    - [Declive Relativo](#declive-relativo)
+    - [Tecnologías de Reemplazo](#tecnologias-de-reemplazo)
+    - [El Papel de BPMN](#el-papel-de-bpmn)
+    - [Casos de Uso Actuales](#casos-de-uso-actuales)
   - [Conclusiones y Perspectivas Futuras](#conclusiones-y-perspectivas-futuras)
+    - [Resumen del Estado del Arte](#resumen-del-estado-del-arte)
+    - [Perspectivas Futuras](#perspectivas-futuras)
   - [Referencias](#referencias)
 
 <h2 id="introduccion-y-contexto-historico">Introducción y contexto histórico</h2>
 
 <h3 id="definicion-de-bpel">Definición de BPEL <a href="#contenido">↑</a></h3>
 
-BPEL, traducido al español como "Lenguaje de Ejecución de Procesos de Negocio", como dice su nombre, se trata de un lenguaje que hace que los procesos sean programables y fáciles de implementar. ~(Volver al inicio)~
+BPEL, traducido al español como "Lenguaje de Ejecución de Procesos de Negocio", como dice su nombre, se trata de un lenguaje que hace que los procesos sean programables y fáciles de implementar.
 
 Está basado en el esquema XML, SOAP y WSDL (Web Services Description Language), lo cual permite interconectar APIs y procesos humanos y hace posible compartir datos en un flujo de trabajo de negocio. 
 ``` mermaid
@@ -52,7 +62,7 @@ Está basado en el esquema XML, SOAP y WSDL (Web Services Description Language),
 
     end
 ```
-Proporciona una manera relativamente sencillay directa de componer varios servicios web en nuevos servicios compuestos denominados procesos de negocio.
+Proporciona una manera relativamente sencilla y directa de componer varios servicios web en nuevos servicios compuestos denominados procesos de negocio.
 Gracias a BPEL es posible la implementación descendente de SOA mediante la composición, orquestación y coordinación de servicios web. 
 
 
@@ -357,9 +367,7 @@ Consta de un editor para la definición de especificaciones de proceso y un moto
 
 <h3 id="declive-relativo">Declive Relativo <a href="#contenido">↑</a></h3>
 
-Al principio, cuando se creó BPMN, se pensaba que la idea era convertir esos diseños a BPEL, porque BPEL era el lenguaje que entendían los motores de ejecución. Pero con el tiempo, esa idea fue perdiendo fuerza.
-
-Eventualmente, las siguientes actualizaciones de BPMN ya no estuvieron pensadas para traducirse a BPEL.
+Al principio, cuando se creó BPMN, se pensaba que la idea era convertir esos diseños a BPEL, porque BPEL era el lenguaje que entendían los motores de ejecución. Pero con el tiempo, esa idea fue perdiendo fuerza. Eventualmente, las siguientes actualizaciones de BPMN ya no estuvieron pensadas para traducirse a BPEL.
 
 **En lugar de eso, se propuso un nuevo formato de archivo para guardar y compartir los diagramas, dejando de lado a BPEL.**
 
@@ -381,9 +389,9 @@ Los microservicios son un enfoque de arquitectura y organización para el desarr
 
 Las arquitecturas de microservicios hacen que las aplicaciones sean más fáciles de escalar y más rápidas de desarrollar. Esto permite la innovación y acelera el tiempo de comercialización de las nuevas características.
 
-Con las arquitecturas monolíticas, todos **los procesos están estrechamente asociados y se ejecutan como un solo servicio**. Esto significa que, si un proceso de una aplicación experimenta un pico de demanda, se debe escalar toda la arquitectura. Agregar o mejorar las características de una aplicación monolítica se vuelve más complejo a medida que crece la base de código. Esta complejidad limita la experimentación y dificulta la implementación de nuevas ideas. Las arquitecturas monolíticas aumentan el riesgo de fallos en disponibilidad de la aplicación porque muchos procesos dependientes y estrechamente vinculados aumentan el impacto del error de un proceso.
+Con las arquitecturas monolíticas, todos **los procesos están estrechamente asociados y se ejecutan como un solo servicio**. Esta complejidad dificulta la implementación de nuevas ideas. Las arquitecturas monolíticas aumentan el riesgo de fallos en disponibilidad de la aplicación porque muchos procesos dependientes y estrechamente vinculados aumentan el impacto del error de un proceso.
 
-La diferencia entre BPEL y los microservicios es que BPEL es un lenguaje diseñado para orquestar procesos de negocio complejos, como en aplicaciones monolíticas o sistemas de integración más grandes, donde los pasos del proceso (como invocar varios servicios) se **coordinan en un flujo único** predefinido. En cambio, en la arquitectura de microservicios, los servicios son independientes, lo que significa que no necesariamente siguen un flujo único orquestado. Cada servicio es autónomo y tiene su propia API, lo que hace que BPEL, que se basa en la orquestación de procesos, sea menos adecuado para este tipo de estructuras.
+La diferencia entre BPEL y los microservicios es que BPEL es un lenguaje diseñado para orquestar procesos de negocio complejos, como en aplicaciones monolíticas o sistemas de integración más grandes, donde los pasos del proceso (como invocar varios servicios) se **coordinan en un flujo único**. En cambio, en la arquitectura de microservicios, los servicios son independientes, lo que significa que no necesariamente siguen un flujo único orquestado. Cada servicio es autónomo y tiene su propia API, lo que hace que BPEL, que se basa en la orquestación de procesos, sea menos adecuado para este tipo de estructuras.
 
 > ✅  Las APIs permiten la comunicación entre servicios de forma estándar y sencilla, utilizando protocolos comunes (como HTTP/REST). Cada microservicio expone su funcionalidad a través de una API bien definida, lo que facilita la integración y la modularidad.
 
@@ -393,15 +401,89 @@ Las APIs ofrecen mayor flexibilidad y control sobre cómo se integran los servic
 
 
 <h3 id="tecnologias-de-reemplazo">Tecnologías de Reemplazo <a href="#contenido">↑</a></h3>
-    <!-- Explora cómo las plataformas de Low-Code/No-Code y la RPA transforman la automatización de procesos.
-    Analiza el impacto de los sistemas de orquestación de contenedores, y de los "Service Mesh" en la gestión de los procesos. -->
+
+**Low Code**  
+El Low Code se trata de una alternativa de desarrollo de aplicaciones  más accesible, en la cual no es necesario tener conocimientos extensos de programación o experiencia. En esta alternativa, se puede crear software con interfaces simples y agregar características mediante arrastrar-soltar. En este caso, es posible que sean necesarios conocimientos básicos de programación.  
+
+**No Code**  
+Por otro lado, en el desarrollo de aplicaciones de No Code se necesita ningún conocimiento de programación ni lenguajes en absoluto. Cualquier empleado de una organización puede construir aplicaciones que se ajusten al flujo de operaciones de la empresa, sin importar sus habilidades técnicas.
+
+**RPA**  
+Robotic Process Automation se trata de un tipo de automatización de tareas repetitivas para el humano integrando APIs y la interface de usuario (UI).
+
+Las herramientas de software de RPA deben contar con:
+- Capacidad de desarrollar scripts con Low-Code
+- Integración con aplicaciones de la empresa
+- Orquestación y administración, incluyendo configuración, monitoreo y seguridad. 
+
+**Orquestación de contenedores**  
+Los contenedores son entornos ligeros y aislados que agrupan aplicaciones y  sus dependencias para ejecutarlas de forma coherente e independiente de la plataforma.  
+Su orquestación se refiere a la administración, escala y provisión de contenedores. Es indispensable en la arquitectura de microservicios. 
+
+Características:
+- Escalado automático: Permite el escalado dinámico de las aplicaciones en función de la demanda actual. 
+- Equilibrio de carga: Distribuyen el tráfico de datos entre contenedores.
+- Disponibilidad mediante autocuración: Se restauran automáticamente sin necesidad de intervención humana.
+- Gestión y optimización de recursos: Supervisan continuamente la utilización y garantizan que sólo reciban los recursos que realmente necesitan.
+- Estrategias de despliegue: Permiten a los desarrolladores desplegar nuevas versiones del software de forma incremental o en paralelo con las versiones existentes.
+
+**Service mesh**  
+Una malla de servicios es una capa de software que gestiona toda la comunicación entre los servicios de las aplicaciones. Esta capa se compone de microservicios en contenedores. A medida que las aplicaciones escalan y aumenta el número de microservicios, se vuelve difícil supervisar el rendimiento de los servicios. Para gestionar las conexiones entre servicios, una malla de servicios ofrece nuevas funciones como la monitorización, el registro, el rastreo y el control del tráfico. Es independiente del código de cada servicio, lo que le permite funcionar a través de los límites de la red y con múltiples sistemas de gestión de servicios.
+
+**Gestión de procesos**
+
+En una organización donde los trabajos están compuestos por microservicios, la orquestación de contenedores y el Service Mesh pueden ser piezas clave para lograr una buena organización, así como para garantizar la escalabilidad y disponibilidad de los servicios.
+
+Al tener los procesos gestionados y estandarizados, se facilita la realización de tareas por parte de los empleados, además de asegurar la adaptabilidad en caso de un aumento en la carga de trabajo.
+
 <h3 id="el-papel-de-bpmn">El Papel de BPMN <a href="#contenido">↑</a></h3>
-    <!-- Explica el ascenso de BPMN como estándar dominante para el modelado de procesos.
-    Compara BPMN con BPEL en flexibilidad, facilidad de uso y adopción. -->
+
+Fue desarrollado originalmente por la Business Process Management Initiative (BPMI) en 2004. Sin embargo, en 2005 se produjo una fusión fundamental cuando BPMI unió fuerzas con el Object Management Group (OMG). Esta fusión desempeñó un papel importante en la configuración del futuro de BPMN.
+
+Un año después, en 2006, BPMN fue adoptado formalmente como estándar por OMG, marcando un hito crucial en su desarrollo. El paso de BPMN 1.0 a BPMN 2.0 se produjo en 2010, pero BPMN 2.0 no se publicó oficialmente hasta 2013. El reconocimiento mundial de la norma llegó cuando fue publicada por la Organización Internacional de Normalización (ISO ) con la designación ISO/IEC 19510.
+
+Los factores que contribuyeron a que BPMN se estableciera como el estandar predominante:
+- Ser un estándar de representación gráfica de procesos, lo que lo hace clara y comprensible para todos los interesados. 
+- Ayuda a las empresas a mejorar los procesos, reducir costos y aumentar la eficiencia al proporcionar un método claro y coherente para modelar y analizar los procesos empresariales.
+- Ser reconocido como el estandar de referencia global para el modelado de procesos.
+
+**BPMN vs BPEL**
+
+|                                                    **BPMN**                                                    	|                                                  **BPEL**                                                  	|
+|:--------------------------------------------------------------------------------------------------------------:	|:----------------------------------------------------------------------------------------------------------:	|
+| Está diseñado para procesos de ejecución más largos, generalmente involucrando a personas para ciertas tareas. 	| Está destinado a procesos totalmente automatizados, principalmente para la orquestación de servicios web.  	|
+| Generalmente dura de unos minutos a varias semanas.                                                            	| Los procesos se completan en pocos segundos o menos.                                                       	|
+| Es una representación gráfica para especificar los procesos de negocio en un diagrama de procesos de negocio   	| Los procesos se escriben en XML de manera estandarizada para orquestar interacciones entre servicios web.  	|
+| Los procesos se pueden interpretar facilmente por todos los involucrados, y su enfoque Low code hace que sea facil diseñarlos.     	| Los procesos solo los pueden diseñar y entender los técnicos familiarizados con el lenguaje XML.                     	|
 <h3 id="casos-de-uso-actuales">Casos de Uso Actuales <a href="#contenido">↑</a></h3>
     <!-- Analiza donde se sigue utilizando BPEL, y explica las razones de su uso actual en esos casos.
     ¿Cuándo tiene sentido seguir usando BPEL? -->
+No puedo encontrar empresas que sigan utilizando BPEL explicitamente, pero algunas empresas que utilizan Oracle SOA Suite, que es una herramienta de software que, entre sus servicios, ofrece BPEL, son:
 
+- SAP (USA)
+- Beachbody (USA)
+- Accenture (Ireland)
+- Radar (USA)
+- Wix (Israel)
+- Deloitte 
+- Infosys (India)
+- NTT DATA (Japón)
+- PwC (United Kingdom)
+
+**✅ Cuándo utilizar BPEL** 
+- Se podría recomendar seguir utilizando BPEL si la organización ya tiene una arquitectura de servicios (SOA) establecida, con muchos procesos definidos.  
+- BPEL está diseñado para manejar procesos basados en servicios web SOAP, especialmente si se necesita:
+    - Transacciones distribuidas
+    - Manejo de errores complejo
+    - Compensaciones
+    - Fiabilidad garantizada 
+- También, algunos sectores como bancos, seguros o gobiernos,  pueden requerir entornos más regulados, así que al tener una semántica formal utilizando BPEL puede que sea una mejor opción debido a su definición de procesos y estructura de flujos.
+- Si actualmente ya se trabaja con plataformas que utilicen BPEL como 
+    - Oracle SOA Suite / BPM Suite
+    - IBM WebSphere Process Server (versiones antiguas)
+    - OpenESB o WSO2 ESB  
+
+    puede que sea mas conveniente continuar trabajando con ellas, siempre y cuando la plataforma lo permita. 
 <h2 id="conclusiones-y-perspectivas-futuras">Conclusiones y Perspectivas Futuras</h2>
 
 <h3 id="resumen-del-estado-del-arte">Resumen del Estado del Arte <a href="#contenido">↑</a></h3>
@@ -437,6 +519,12 @@ Volume 12,
 ISSN 2352-7110,
 https://doi.org/10.1016/j.softx.2020.100576. (https://www.sciencedirect.com/science/article/pii/S235271102030289)
 17. *Microservicios.* Obtenido de AWS. https://aws.amazon.com/es/microservices/
-
-https://home.cs.colorado.edu/~kena/classes/7818/f06/lectures/BPEL.pdf
-
+18. *Low-code vs. no-code app development* Obtenido de Microsoft. https://www.microsoft.com/en-us/power-platform/products/power-apps/topics/low-code-no-code/low-code-no-code-development-platforms
+19. *What is robotic process automation (RPA)?* Obtenido de IBM. https://www.ibm.com/think/topics/rpa
+20. Gotz, C. (31 Jul 2024) *Qué es la orquestación de contenedores y qué ventajas ofrece* Obtenido de Konfuzio. https://konfuzio.com/es/orquestacion-de-contenedores/#was-ist-container-orchestrierung
+21. McKendrick, E. (2 Nov 2023) *¿Qué es el estándar BPMN 2.0?* Obtenido de Processmaker. https://www.processmaker.com/es/blog/what-is-the-bpmn-2-0-standard/#bpmn_20_a_brief_history
+22. (20 Ago 2024) *El poder de la modelización de procesos con BPMN* Obtenido de Bonitasoft. https://www.bonitasoft.com/es/noticias/el-poder-de-la-modelizacion-de-procesos-con-bpmn
+23. Wingdassen, C. *BPMN - El estándar para el Modelado de Procesos de Negocios* Obtenido de GBTech. https://www.gbtec.com/es/recursos/bpmn/
+24. (23 Mar 2019) *Différence entre BPEL et BPMN.* Obtenido de WayToLearnX. https://waytolearnx.com/2019/03/difference-entre-bpel-et-bpmn.html
+25. *Who uses Oracle SOA Suite?* Obtenido de Enlyft. https://enlyft.com/tech/products/oracle-soa-suite
+26. *Companies that use Oracle SOA.* Obtenido de TheirStack. https://theirstack.com/en/technology/oracle-soa
