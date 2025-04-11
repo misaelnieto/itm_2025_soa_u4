@@ -60,7 +60,10 @@ Por otro lado, IBM Process Server es otra plataforma importante donde se pueden 
 **Describe los elementos clave de BPEL: procesos, actividades, variables y socios.**
 En BPEL, un **proceso** es básicamente una forma de organizar y ejecutar tareas de negocio usando servicios web. Pueden ser procesos largos, con manejo de errores, eventos asíncronos, y hasta transacciones con compensaciones.
 
+
 Las **actividades** son los pasos del proceso. Hay actividades simples como invoke (llamar a un servicio), receive (esperar un mensaje), reply (responder), assign (modificar datos), y más. Estas se combinan con estructuras como sequence (orden), flow (en paralelo), switch (condiciones), while (bucles) y pick (esperar eventos).
+
+![Proceso de BEPL](https://docs.oracle.com/cd/E18727-01/doc.121/e12065/img/SOA_sifbpel.gif)
 
 Las **variables** guardan la info que pasa entre actividades. Se usan para mensajes de entrada y salida, y se definen con tipos XML o WSDL.
 
@@ -72,6 +75,9 @@ BPEL permite armar flujos bastante complejos combinando actividades. Puedes ejec
 
 Para hablar con otros servicios, BPEL usa partnerLink y la actividad invoke. Puede esperar respuestas (receive) o responder a clientes (reply). Soporta tanto llamadas síncronas como asíncronas. Todo esto se basa en WSDL, lo que hace que la comunicación esté bien definida. También puedes orquestar servicios (un proceso los coordina) o usar coreografía (todos saben cómo interactuar sin un "jefe" central).
 
+A continuación se muestra un diagrama con su diagrama de flujo con switches y tareas en paralelo y orden sobre una agencia de Viaje: 
+
+![Ejemplo con Negocio de Viajes](https://www.oracle.com/img/tech/matjaz-bpel1-f3.gif)
 ## Fortalezas y Debilidades
 
 **Evalúa las ventajas de BPEL: orquestación de servicios y manejo de transacciones.**
