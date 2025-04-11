@@ -455,9 +455,10 @@ Los factores que contribuyeron a que BPMN se estableciera como el estandar predo
 | Generalmente dura de unos minutos a varias semanas.                                                            	| Los procesos se completan en pocos segundos o menos.                                                       	|
 | Es una representación gráfica para especificar los procesos de negocio en un diagrama de procesos de negocio   	| Los procesos se escriben en XML de manera estandarizada para orquestar interacciones entre servicios web.  	|
 | Los procesos se pueden interpretar facilmente por todos los involucrados, y su enfoque Low code hace que sea facil diseñarlos.     	| Los procesos solo los pueden diseñar y entender los técnicos familiarizados con el lenguaje XML.                     	|
+
+
 <h3 id="casos-de-uso-actuales">Casos de Uso Actuales <a href="#contenido">↑</a></h3>
-    <!-- Analiza donde se sigue utilizando BPEL, y explica las razones de su uso actual en esos casos.
-    ¿Cuándo tiene sentido seguir usando BPEL? -->
+
 No puedo encontrar empresas que sigan utilizando BPEL explicitamente, pero algunas empresas que utilizan Oracle SOA Suite, que es una herramienta de software que, entre sus servicios, ofrece BPEL, son:
 
 - SAP (USA)
@@ -484,13 +485,23 @@ No puedo encontrar empresas que sigan utilizando BPEL explicitamente, pero algun
     - OpenESB o WSO2 ESB  
 
     puede que sea mas conveniente continuar trabajando con ellas, siempre y cuando la plataforma lo permita. 
+
+
 <h2 id="conclusiones-y-perspectivas-futuras">Conclusiones y Perspectivas Futuras</h2>
 
 <h3 id="resumen-del-estado-del-arte">Resumen del Estado del Arte <a href="#contenido">↑</a></h3>
-    <!-- Sintetiza los hallazgos clave sobre la evolución y el estado actual de BPEL. -->
+
+Desde su estandarización en el 2003, BPEL se consolidó como una de las tecnologías clave para la orquestación de servicios en entornos SOA. Oracle e IBM lo ofrecieron como parte de sus servicios en su software de desarrollo. Su fortaleza se basa en la capacidad de definir procesos estructurados, transaccionales y un gran control sobre el flujo de trabajo. 
+
+Sin embargo, con la evolución de la tecnología, la aparición de la BPMN 2.0 y las arternativas de desarrollo como Low Code o No Code, el interés por BPEL ahora es muy poco. El estándar de BPMN 2.0 han tomado el protagonismo por su enfoque mas cercano al negocio y su facilidad de implementación y comprensión. Además, la adopción de microservicios, APIs REST y plataformas en la nube han desplazado el uso de BPEL hacia sectores muy específicos, donde aún resulta útil por razones de legado, gobernabilidad o cumplimiento de normas. 
 <h3 id="perspectivas-futuras">Perspectivas Futuras <a href="#contenido">↑</a></h3>
-    <!-- Analiza las tendencias futuras en la orquestación de servicios y la automatización de procesos.
-    Considera el posible papel de BPEL en el futuro. -->
+
+El futuro de la orquestación de procesos indica que se va a enfocar en desarrollos más ligeros, flexibles y desacoplados, como los proporcionados por las arquitecturas basadas en eventos o el uso de Service Mesh. 
+Las herramientas modernas privilegian la visibilidad y escalabilidad dinámica, aspectos en los que BPEL no fue originalmente diseñado para destacar. 
+
+En este caso, BPEL será cada vez menos visto, en donde básicamente solo se encontrará en organizaciones con sistemas heredados donde migrar sería costoso o arriesgado. No se espera un resurgimiento de BPEL como estándar dominante, pero seguirá presente como tecnología de soporte en infraestructuras SOA tradicionales. 
+
+Por otro lado, los lenguajes declarativos centrados en BPMN, flujos de eventos y herramientas Low Code seguirán en crecimiento y serán los medios preferidos para la automatización de procesos. 
 
 <h2 id="referencias">Referencias <a href="#contenido">↑</a></h2>
 
