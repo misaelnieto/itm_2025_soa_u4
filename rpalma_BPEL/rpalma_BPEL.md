@@ -85,7 +85,7 @@ timeline
     title Evolución de BPEL
     2002 : Se propone BPEL for Web Services (BPEL4WS) por BEA, IBM y Microsoft.
          : El lenguaje esta inspirado por el Lenguaje de Flujo de Web Services de IBM y XLANG de Microsoft.
-    2003 : Se envía al comité técnico OASIS para ser desarrollado en un estandar abierto y oficial.
+    2003 : Se envía al comité técnico OASIS para ser desarrollado como un estándar abierto y oficial.
          : Se unen mas contribuidores como SAP y Siebel Systems para la publicacion de la versión 1.1.
     2007 : Publicación de WSBPEL (Web Service Business Process Execution Language) 2.0 como estándar oficial por OASIS. Fue la ultima actualización que se hizo.
     2008 : OASIS lanzó una convocatoria para participar en el Comité Técnico de BPEL4People. 
